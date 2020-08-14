@@ -8,8 +8,16 @@
 
 class CardGame:
 
-    def checkforAce(self, value):
-        if card.value == 1:
+    # You'll need to write something like this
+    # before any of the functions are recognised as methods for CardGame
+
+
+    def __init__(self, card1, card2):
+        self.card1 = card1
+        self.card2 = card2
+
+    def check_for_ace(self, card1):
+        if card1.value == 1:
             return True
         else:
             return False
@@ -24,6 +32,6 @@ class CardGame:
         total = 0
         for card in cards:
             total += card.value
-        return "You have a total of" + str[total]
+        return "You have a total of" + " " + str(total)
 
 
